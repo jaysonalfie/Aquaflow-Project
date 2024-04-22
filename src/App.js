@@ -1,24 +1,22 @@
 import React from "react";
-import {BrowserRouter, Routes, Route, createBrowserRouter} from 'react-router-dom';
+import { createBrowserRouter, Route, createRoutesFromElements, RouterProvider } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import MainLayout from "./layouts/MainLayout";
+import AboutPage from "./pages/AboutPage";
 
-import Home from "./components/Home";
-import About from "./components/About";
-import Navbar from "./components/Navbar";
-
-function App() {
+//creating react router for the elements in the application
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    //creatin parent route as main layout will be in every page
+  <Route path='/' element={<MainLayout/>}>
+    <Route index element={<HomePage/>}/>
+    <Route path="/about" element={<AboutPage/>}/>
+  </Route>
+)
+)
+const App=()=> {
+  return <RouterProvider router={router}/>
   
-  return (
-    <BrowserRouter>
-      <div className="App">
-      <Navbar/>
-        <Routes>
-        <Route exact path='/' element={<Home/>}/>
-        <Route path='/about' element={<About/>}/>
-        
-        </Routes>
-      </div>
-    </BrowserRouter>
-  );
 }
 
 export default App;

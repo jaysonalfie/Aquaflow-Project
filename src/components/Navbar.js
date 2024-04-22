@@ -7,11 +7,11 @@ const Navbar = () => {
   return (
     <header>
          <div className="container">
-         <img src={logo1} alt="AquaFlow" className="logo"/>
+         <img  src={logo1} alt="AquaFlow" className="logo"/>
          <nav>
         <ul>
             <li>
-                <NavLink to='/home'>Home</NavLink>
+                <NavLink to='/'>Home</NavLink>
             </li>
             <li>
                 <NavLink to='/about'>About</NavLink>

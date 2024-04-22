@@ -1,3 +1,4 @@
+ /* navbar component */
 .container{
     width:100%;
     margin:0 auto;
@@ -14,16 +15,15 @@ header ::after{
 .logo{
     float:left;
     padding:10px 0 ;
+    height:80px;
+    width:80px;
+    border-radius: 25px;
 }
 
 nav{
     float:right;
 }
-img{
-    height:80px;
-    width:80px;
-    border-radius: 25px;
-}
+
 
 nav ul {
 margin: 0;
@@ -65,3 +65,12 @@ nav a::before{
 nav a:hover::before{
   width:100%; 
 }
+
+/* Home component */
+.section1{
+    border: 5px dotted red;
+    display: flex;
+    background: #3876F5;
+    outline: 2px solid lime;
+    gap:1.5rem;
+}    
