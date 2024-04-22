@@ -22,6 +22,7 @@ header ::after{
 
 nav{
     float:right;
+    margin-right: 3rem;
 }
 
 
@@ -68,9 +69,56 @@ nav a:hover::before{
 
 /* Home component */
 .section1{
-    border: 5px dotted red;
+    /* border: 10px solid firebrick;
     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     background: #3876F5;
     outline: 2px solid lime;
-    gap:1.5rem;
-}    
+    gap: 2rem; */
+    display: grid;
+    grid-template-columns: auto auto;
+	margin-top: 50px;
+	margin-left: 100px;
+    
+}   
+
+/* 
+.section1 > * {
+ flex:1;
+} */
+
+.heading{
+    font-size: 45px;
+    font-weight: 400;
+    padding-bottom: 30px;
+    line-height: 1.5;
+}
+.water{
+    font-weight: 400;
+    width: 64%;
+    line-height: 1.5;
+    font-size: 18px;
+}
+.btn{
+    margin-top: 20px;
+    padding: 15px 60px;
+    border-radius: 10vmax;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    background-color:#38EAFF;
+}
+.btn2{
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 15px 60px;
+    border-radius: 10vmax;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.btn{
+    background-color: #3876F5;
+    color: #38EAFF;
+}
