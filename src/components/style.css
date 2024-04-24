@@ -77,7 +77,7 @@ nav a:hover::before{
     outline: 2px solid lime;
     gap: 2rem; */
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
 	margin-top: 50px;
 	margin-left: 100px;
     
@@ -108,17 +108,88 @@ nav a:hover::before{
     cursor: pointer;
     font-size: 18px;
     background-color:#38EAFF;
+    margin-right: 26px;
 }
 .btn2{
     margin-top: 20px;
-    margin-left: 100px;
+    margin-left: 25px;
     padding: 15px 60px;
     border-radius: 10vmax;
     border: none;
     cursor: pointer;
     font-size: 18px;
+    transition-duration: 0.4s;
+
+}
+.btn2:hover {
+    background-color:#e7e7e7;
+    color: white;
 }
 .btn{
     background-color: #3876F5;
+    color: #38EAFF;
+}
+ .deliveryman {
+    width: 90%;
+     border-radius: 25px;
+ }
+ 
+
+ /* section 2 */
+/* watercard */
+.section2{
+    display: grid;
+    gap: 1em;
+   
+    margin-top: 50px;
+    margin-left:100px ;
+}
+@media (min-width: 40rem){
+    .section2{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.girlwater{
+    width:566px;
+    border-radius: 25px;
+
+}
+.waterContainer{
+    height: 340px;
+    width: 240px;
+}
+.bottle{
+    width:90%;
+    height: 70%;
+}
+.watersec{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+.header2{
+    color: #DA9E04;
+    font-size: 30px;
+    font-weight: 400px;
+    font-style: italic;
+}
+.lives{
+    font-size: 38px;
+    font-weight: 450px;
+    line-height: 1.5 ;
+}
+.waterdetails{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom:40px;
+}
+.btn3{
+    margin-top: 20px;
+    padding: 15px 60px;
+    border-radius: 10vmax;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-right: 26px;
+     background-color: #3876F5;
     color: #38EAFF;
 }
