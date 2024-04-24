@@ -157,12 +157,18 @@ nav a:hover::before{
 .waterContainer{
     height: 340px;
     width: 240px;
+    border-style: groove;
+    border-radius: 25px;
+    margin: 2px;
+    text-align: center;
+    border-color: black;
 }
 .bottle{
     width:90%;
     height: 70%;
 }
 .watersec{
+    margin-top: 95px;
     display: grid;
     grid-template-columns: repeat(2, 1fr)
 }
@@ -181,6 +187,7 @@ nav a:hover::before{
     font-size: 16px;
     margin-top: 10px;
     margin-bottom:40px;
+
 }
 .btn3{
     margin-top: 20px;
@@ -192,4 +199,10 @@ nav a:hover::before{
     margin-right: 26px;
      background-color: #3876F5;
     color: #38EAFF;
+}
+
+/* section3 */
+.section3{
+    margin-top: 50px;
+    margin-left:100px ;
 }

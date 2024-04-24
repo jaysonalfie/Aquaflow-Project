@@ -43,6 +43,14 @@ const Home = () => {
           <WaterCard/>
         </article>
       </section>
+      <section className="section3">
+        <div className="Waterservices">
+            <p>Our services</p>
+            <p>we connect you with the best water shops</p>
+            
+        </div>       
+
+      </section>
     </div>
   );
 };
