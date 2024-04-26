@@ -161,7 +161,7 @@ nav a:hover::before{
     border-radius: 25px;
     margin: 2px;
     text-align: center;
-    border-color: black;
+    border-color: #A9A9A9;
 }
 .bottle{
     width:90%;
@@ -203,6 +203,58 @@ nav a:hover::before{
 
 /* section3 */
 .section3{
-    margin-top: 50px;
+    margin-top: 65px;
     margin-left:100px ;
+}
+.header3{
+    color: #DA9E04;
+    font-size: 30px;
+    font-weight: 400px;
+    font-style: italic;
+}
+.lives2{
+    font-size: 28px;
+    font-weight: 450px;
+    line-height: 1 ;
+}
+.serviceCards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1rem;
+    /* display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    padding: 1rem; */
+    
+
+}
+.servicecard{
+    width:330px;
+    height:430px;
+    border-style: groove;
+    border-radius:20px;
+    border-color:#A9A9A9;
+    text-align:start;
+    padding: 1rem;
+
+}
+.servicecard img{
+    width: 80%;
+    margin-bottom:8px;
+
+}
+.btn4{
+    margin-top: 20px;
+    margin-left: 25px;
+    padding: 15px 60px;
+    border-radius: 10vmax;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition-duration: 0.4s;
+
+}
+.btn4:hover{
+    background-color:#e7e7e7;
+    color: white; 
 }
