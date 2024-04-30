@@ -6,6 +6,10 @@ import deliveryman from "../images/man delivery1.jpg";
 import sportygirl from "../images/sportygirl.jpg";
 import WaterCard from "./WaterCard";
 import ServiceCard from "./ServiceCard";
+import waterb1 from "../images/waterb1.jpg";
+import InfoCard from "./InfoCard";
+import Footer from "./Footer";
+
 
 const Home = (props) => {
   return (
@@ -61,19 +65,35 @@ const Home = (props) => {
               shopName="RubyFresh"
               shopLocation="BuruBuru"
               shopNo="+254 789908765"
+              shopImage={waterb1}
             />
             <ServiceCard
               shopName="WaterStar"
               shopLocation="BuruBuru"
               shopNo="+254 712345678"
+              shopImage={waterb1}
             />
             <ServiceCard
               shopName="Alfinerals"
               shopLocation="Outering Rd."
               shopNo="+254 765790022"
+              shopImage={waterb1}
             />
           </div>
         </div>
+      </section>
+      <section className="section4">
+        <div className="infoContainer">
+          <p className="header3"> Get informed </p>
+          <p className="lives2"> Knowledge is power</p>
+          <div>
+            <InfoCard/>
+            
+          </div>
+        </div>
+      </section>
+      <section className="section4">
+         <Footer/>
       </section>
     </div>
   );

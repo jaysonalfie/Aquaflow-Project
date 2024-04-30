@@ -9,7 +9,7 @@ const ServiceCard = (props) => {
 
   return (
     <div className='servicecard'>
-        <img src={waterb1}/>
+        <img src={props.shopImage} alt='shop'/>
        <div>
         <p className='shopName'>{shopName}</p>
         <p className='shopLocation'>Location:{shopLocation}</p>
