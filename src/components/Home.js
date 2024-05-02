@@ -92,8 +92,8 @@ const Home = (props) => {
           </div>
         </div>
       </section>
-      <section className="section4">
-         <Footer/>
+      <section className="section5">
+         
       </section>
     </div>
   );
