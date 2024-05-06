@@ -41,6 +41,7 @@
   margin-right: 25px;
   padding: 15px 30px;
   border-radius: 100vh;
+  font-size: 15px;
 }
 
 /* hero2 */
@@ -83,4 +84,24 @@ width: 210px;
 .team_columns img{
   border-radius: 10px;
 }
-
+/* HeroBottom */
+.heroBottom_wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 525px;
+  width: 1157px;
+  padding: 15px;
+  margin-top: 65px;
+  margin-left: 75px;
+}
+.right img{
+  height: 80%;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+}
+.details{
+  font-size: 20px;
+  font-weight: 7px;
+}
