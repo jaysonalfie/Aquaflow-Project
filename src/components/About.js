@@ -1,11 +1,18 @@
 import React from "react";
-import Navbar from "./Navbar";
+import Hero from "./about/Hero";
+import Hero2 from "./about/Hero2";
 
 
 const About =()=>{
     return(
         <div>
-            <Navbar/>
+            <section>
+            <Hero/>
+            </section>
+            <section>
+                <Hero2/>
+            </section>
+            
         </div>
     )
 }

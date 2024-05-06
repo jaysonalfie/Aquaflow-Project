@@ -1,0 +1,72 @@
+/* hero css */
+.hero-wrapper{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+
+.water_section img{
+    height:600px;
+    width: 638px;
+}
+.water_section{
+  height: 630px;
+  width: 645px;
+}
+.header {
+    color: #da9e04;
+    font-size: 30px;
+    font-weight: 100px;
+    font-style: italic;
+  }
+  
+  .water_sectiondet{
+    margin-top: 55px;
+    width: 70%;
+    margin-left: 45px;
+  }
+  .satisfaction {
+    font-size: 28px;
+    font-weight: 450px;
+    line-height: 1;
+    margin-bottom: 45px;
+  }
+  .details1{
+    font-size: 18px;
+    font-weight: 60px;
+  }
+.btn6{
+  background-color: #3876f5;
+  color: #38eaff;
+  margin-right: 25px;
+  padding: 15px 30px;
+  border-radius: 100vh;
+}
+
+/* hero2 */
+.hero2_wrapper{
+  margin-top: 125px;
+}
+.trust-columns{
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  border: 1px solid;
+  
+  padding: 7px;
+  border-radius: 8px;
+}
+.heading2{
+  text-align: center;
+}
+.trust-columns img{
+  width: 80%;
+ border-radius: 8px;
+}
+.waterlevel{
+height: 210px;
+width: 210px;
+}
+
+
