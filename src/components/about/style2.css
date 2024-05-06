@@ -46,6 +46,7 @@
 /* hero2 */
 .hero2_wrapper{
   margin-top: 125px;
+  padding: 10px;
 }
 .trust-columns{
   margin-top: 35px;
@@ -69,4 +70,17 @@ height: 210px;
 width: 210px;
 }
 
+/* hero3 */
+.hero3-wrapper{
+  margin-top: 125px;
+  padding: 15px;
+}
+.team_columns{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.team_columns img{
+  border-radius: 10px;
+}
 
