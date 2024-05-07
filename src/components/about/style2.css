@@ -105,3 +105,48 @@ width: 210px;
   font-size: 20px;
   font-weight: 7px;
 }
+
+/* shop page
+shop card */
+.Card_wrapper{
+  border: 2px solid;
+  border-width:50%;
+ 
+  border-color: gray;
+}
+.shoplogo{
+  border-radius: 50%;
+  width: 5%;
+}
+.shophead{
+  display: flex;
+  flex-direction: row;
+}
+.shop_span{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+.shopproduct{
+   margin-top: 45px;
+   padding: 10px;
+  
+}
+.shopproduct img{
+  display: block;
+  width: 238px;
+  height: 295px;  
+}
+.productspan{
+padding: 0 20px 20px 20px;
+margin-left: 49px;
+ }
+
+.btn7{
+  background-color: #3876f5;
+  color: #38eaff;
+  margin-left: 39px;
+  padding: 15px 30px;
+  border-radius: 100vh;
+  font-size: 15px;
+ }
