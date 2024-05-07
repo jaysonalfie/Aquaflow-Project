@@ -315,7 +315,7 @@ section5 */
 
 /* footer */
 .footer{
-  margin-top: 330px;
+  margin-top: 360px;
   background: #3876f5;
   padding: 5px;
   display: grid;
@@ -346,7 +346,8 @@ section5 */
   margin-top: 40px;
   padding: 5px;
   display:grid ;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows:repeat(3, 1fr);
+  gap: 1em;
 }
 .right{
   display: grid;

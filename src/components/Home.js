@@ -1,6 +1,5 @@
 /* eslint-disable jsx-a11y/alt-text */
 import React from "react";
-import Navbar from "./Navbar";
 import "./style.css";
 import deliveryman from "../images/man delivery1.jpg";
 import sportygirl from "../images/sportygirl.jpg";
@@ -8,7 +7,7 @@ import WaterCard from "./WaterCard";
 import ServiceCard from "./ServiceCard";
 import waterb1 from "../images/waterb1.jpg";
 import InfoCard from "./InfoCard";
-import Footer from "./Footer";
+
 
 
 const Home = (props) => {

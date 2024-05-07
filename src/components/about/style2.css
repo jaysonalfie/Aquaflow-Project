@@ -110,13 +110,17 @@ width: 210px;
 shop card */
 .Card_wrapper{
   border: 2px solid;
-  border-width:50%;
- 
+  border-width:40%;
+  border-radius: 8px;
   border-color: gray;
+  width: 320px;
+  height: 580px;
+  ;
 }
 .shoplogo{
   border-radius: 50%;
-  width: 5%;
+  width:60px;
+  height: 60px;
 }
 .shophead{
   display: flex;
@@ -150,3 +154,11 @@ margin-left: 49px;
   border-radius: 100vh;
   font-size: 15px;
  }
+
+.cardsColumn{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 75px;
+  margin-top: 85px;
+}
