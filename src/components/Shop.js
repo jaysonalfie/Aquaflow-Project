@@ -10,7 +10,9 @@ import Person5 from "../images/perso n4.GIF"
 import Product5 from "../images/product-5-copyright-500x500.jpg"
 import Product4 from "../images/shop-4.jpg"
 import Product3 from "../images/shop3.GIF"
-import Product2 from "../images/bottle4.GIF"
+import Product2 from "../images/bottle4.GIF";
+import Sidebar from './shop/Sidebar';
+import Menu from './shop/Menu';
 
 const Shop = (props) => {
   return (
@@ -18,8 +20,14 @@ const Shop = (props) => {
        <div>
         Shops
        </div>
-       <div>
-        <div></div>
+       <div className='menu_products'>
+        <div className='shopfilters'>
+          <Sidebar/>
+        </div>
+         <div className='right-bar'>
+         <div className='shopMenu'>
+          <Menu/>
+        </div>
         <div className='Cards'>
           <div className='cardsColumn'>
              <Card
@@ -91,6 +99,7 @@ const Shop = (props) => {
              />
           </div>
         </div>
+         </div>
        </div>
      
     
