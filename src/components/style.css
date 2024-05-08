@@ -319,7 +319,7 @@ section5 */
   background: #3876f5;
   padding: 5px;
   display: grid;
-  grid-template-columns: 1fr 1fr ;
+  grid-template-columns: 1fr 1fr;
   gap:1rem;
   color: white;
   bottom: 0;

@@ -13,8 +13,12 @@ import Product3 from "../images/shop3.GIF"
 import Product2 from "../images/bottle4.GIF";
 import Sidebar from './shop/Sidebar';
 import Menu from './shop/Menu';
+import FilterCard from './shop/FilterCard';
+import TagFilter from './shop/TagFilter';
+
 
 const Shop = (props) => {
+   //all the components that are in the shopsPage
   return (
     <div className='shop_wrapper'>
        <div>
@@ -23,6 +27,9 @@ const Shop = (props) => {
        <div className='menu_products'>
         <div className='shopfilters'>
           <Sidebar/>
+          <FilterCard/>
+          <TagFilter/>
+          
         </div>
          <div className='right-bar'>
          <div className='shopMenu'>

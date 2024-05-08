@@ -97,7 +97,7 @@ width: 210px;
 .right img{
   height: 80%;
 }
-.left{
+.leftSide{
   display: flex;
   flex-direction: column;
 }
@@ -172,6 +172,7 @@ margin-left: 49px;
   gap: 0.3rem;
   padding: 0.4rem;
   margin: 0.4rem;
+  margin-top: 2rem;
 }
 .menu{
   display: flex;
@@ -194,10 +195,21 @@ margin-left: 49px;
   margin-top: 2.4rem;
 
 }
-img{
+.shop img{
   border-radius: 50%;
   width:60px;
   height: 60px;
+}
+.pdet{
+  color:#3876f5;
+}
+.btn9{
+  margin-left: 39px;
+  padding: 15px 30px;
+  background-color: white;
+  border-color: #3876f5;
+  border-radius:0.3rem;
+  color:#3876f5;
 }
 .shop{
   display: flex;
@@ -206,4 +218,44 @@ img{
   border: solid gray 1px;
   border-radius: 0.3rem;
   background: #E0EDEF;
+}
+.filtercardwrapper{
+  position: sticky;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  gap:0.4rem;
+  border: solid grey 1px;
+  border-radius: 1.3rem;
+  margin-top: 45px;
+  padding: 0.4rem;
+}
+.rectangle{
+  width: 190px;
+  height:10px;
+  border: solid black 1px;
+  border-radius: 5px;
+  background: #4E75C7;
+  color: #4E75C7;
+}
+/* tagfilter */
+.tags_wrapper{
+  border: solid gray 1px;
+  padding: 0.4rem;
+  margin-top: 45px;
+  border-radius: 1.3rem;
+
+}
+.tags{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  padding:px;
+}
+.tag1{
+  padding: 12px 25px;
+  border: solid gray 1px;
+  border-radius: 0.3rem;
+  padding-right: 2px;
+  background:#E0EDEF ;
 }

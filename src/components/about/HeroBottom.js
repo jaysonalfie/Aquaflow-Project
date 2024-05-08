@@ -9,7 +9,7 @@ const HeroBottom = () => {
         <div className='right'>
           <img src={person4}/>
         </div>
-        <div className='left'>
+        <div className='leftSide'>
           <div className='quality_details'>
            <h2 className='header'>what is in the water</h2>
            <p className='satisfaction'>Check Water Quality</p>
