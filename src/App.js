@@ -4,6 +4,8 @@ import HomePage from "./pages/HomePage";
 import MainLayout from "./layouts/MainLayout";
 import AboutPage from "./pages/AboutPage";
 import ShopsPage from "./pages/ShopsPage";
+import LoginPage from "./pages/LoginPage";
+import SignupPage from "./pages/SignupPage";
 
 //creating react router for the elements in the application
 const router = createBrowserRouter(
@@ -13,6 +15,8 @@ const router = createBrowserRouter(
     <Route index element={<HomePage/>}/>
     <Route path="/about" element={<AboutPage/>}/>
     <Route path="/shop" element={<ShopsPage/>}/>
+    <Route path="/login" element={<LoginPage/>}/>
+    <Route path="/signup" element={<SignupPage/>}/>
   </Route>
 )
 )

@@ -105,9 +105,22 @@ const Shop = (props) => {
               productInfo="20 litre bottle"
              />
           </div>
-        </div>
+          <div className='squares'>
+         <div>
+            <canvas className='square1'></canvas>
+         </div>
+         <div>
+            <canvas className='square1'></canvas>
+         </div>
+         <div>
+            <canvas className='square1'></canvas>
          </div>
        </div>
+        </div>
+
+         </div>
+       </div>
+       
      
     
     </div>
