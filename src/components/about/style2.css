@@ -278,10 +278,10 @@ shop card */
   border: 1px solid gray;
 }
 .logo3 {
-  padding-top: 4px;
+  padding-top: 5px;
   height: 95px;
   width: 95px;
-  border-radius: 2px;
+  border-radius: 50%;
 }
 .form-header {
   display: flex;
@@ -300,7 +300,7 @@ shop card */
 
 .form .text {
   position: relative;
-  margin: 30px 0;
+  margin: 15px 0;
 }
 .form label {
   display: flex;
@@ -335,4 +335,40 @@ input {
   flex-direction: column;
 }
 
+/*error-page*/
+.error_page{
+  position: absolute;
+  top: 40%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 430px;
+  background: white;
+  border-radius: 10px;
+  border:none;
+}
+
+
 /* signup-form */
+.signup_wrapper{
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  background-color: white;
+  border-radius: 10px;
+  width: auto;
+  border: 1px solid gray;
+}
+.signUp_form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+.signUp_form .text{
+   position: relative;
+   margin: 15px 0;
+}
+.signUp_form label{
+  display: flex;
+  flex-direction: column;
+  gap: auto;
+}
