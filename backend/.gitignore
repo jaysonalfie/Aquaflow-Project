@@ -9,6 +9,7 @@ env/
 # Ignore database files
 *.db
 *.sqlite3
+*.mysql
 
 # Ignore logs
 *.log
