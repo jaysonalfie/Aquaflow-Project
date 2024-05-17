@@ -17,7 +17,7 @@ env/
 __init__.py
 
 # Ignore local configuration files
-*.env
+.env
 
 # Ignore system-specific files
 .DS_Store
