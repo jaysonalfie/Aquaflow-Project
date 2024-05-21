@@ -23,6 +23,6 @@ class User(Base):
     hashed_password= Column(String)
     
 
-    #function to verify password
+#function to verify password
     def verify_password(plain_password, hashed_password):
         return pwd_context.verify(plain_password, hashed_password)
