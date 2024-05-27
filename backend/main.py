@@ -1,12 +1,37 @@
-from fastapi import Depends, FastAPI
-from fastapi.security import OAuth2PasswordBearer
-from typing_extensions import Annotated
+from fastapi import FastAPI, HTTPException , Depends, status
+from pydantic import BaseModel
+from typing import Annotated
+import models
+from database import engine, SessionLocal
+from sqlalchemy.orm import Session
 
 app = FastAPI()
+models.Base.metadata.create_all(bind=engine)
 
-oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
+#creating pydantic models
+#used for data validation
+
+class UserBase(BaseModel):
+    email:str
+    username:str
 
 
-@app.get("/items/")
-async def read_items(token: Annotated[str, Depends(oauth2_scheme)]):
-    return {"token": token}
+#creating depedancy for the db
+def get_db():
+    db= SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()
+
+db_dependency = Annotated[Session, Depends(get_db)]
+
+
+#endpoint to create new user
+@app.post("/users/", status_code=status.HTTP_201_CREATED)
+async def create_user(user: UserBase, db : Session = Depends(get_db)):
+    db_user = models.User(**user.dict())
+    db.add(db_user)
+    db.commit()
+    db.refresh(db_user)
+    return db_user
