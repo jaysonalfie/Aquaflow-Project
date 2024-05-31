@@ -16,10 +16,10 @@ SECRET_KEY = "691e3a14e6a0bb3228b233b5bb2b5743efff3faa82cd64b8eb17f345aabe8c3a"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES= 30
 
-#setting up OAuth2 for password0based authentication
+#setting up OAuth2 for password-based authentication
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
-#list of origins or websited that can talk to your backend
+#list of origins or websites that can talk to your backend
 origins = [
 
     "http://localhost:3000",
@@ -29,7 +29,7 @@ origins = [
 #Adding Cross-Origin Resource Sharing to the application (CORS)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins = origins,#allow onl these origins
+    allow_origins = origins,#allow only these origins
     allow_credentials= True,#allow cookies to be sent
     allow_methods=["*"],#allow all the HTTP methods
     allow_headers=["*"], #allow all headers
@@ -43,6 +43,7 @@ def get_db():
     finally:
         db.close()
 
+#creating instance of CryptoContext that handles password hashing
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 #creating pydantic models
@@ -58,8 +59,11 @@ def get_user_by_username(db:Session, username:str):
 
 #function to create new user in the database
 def create_user(db:Session, user: UserCreate):
+    #hashes the password
     hashed_password = pwd_context.hash(user.password)
+    #creates the new user
     db_user= User(email= user.email, username=user.username, hashed_password = hashed_password)
+    #adds user to the db and commits changes
     db.add(db_user)
     db.commit()
     return "User created"
@@ -74,16 +78,22 @@ def register_user(user : UserCreate, db: Session = Depends(get_db)):
 
 #authenticationg the user
 def authenticate_user(username:str, password:str, db:Session):
+    #queries db to retrieve user
     user = db.query(User).filter(User.username == username).first()
+    #if password user is not correct
     if not user:
         return False
+    #if password is incorrect
     if not pwd_context.verify(password, user.hashed_password):
         return False
     return user
 
 #creating the access token
 def create_access_token(data:dict, expires_delta:timedelta | None = None):
+    #dictionary containing data to be encoded
     to_encode = data.copy()
+    #token expiration time
+    #calculates the expiration time either when provided or sets it to 15 min from the current time
     if expires_delta:
         expire = datetime.now(timezone.utc) + expires_delta
     else:
